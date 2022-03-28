@@ -84,10 +84,10 @@ public class webFunctions extends webActions{
 
             //validation of uploading files
             if (fill.validate_text.isDisplayed()) {
-                node.fail("Error. no file was uploaded", MediaEntityBuilder.createScreenCaptureFromBase64String(filename).build());
+                node.pass("Error message displayed", MediaEntityBuilder.createScreenCaptureFromBase64String(filename).build());
 
             } else {
-                node.pass("File was uploaded successfully",  MediaEntityBuilder.createScreenCaptureFromBase64String(filename).build());
+                node.fail("Error message is not displayed",  MediaEntityBuilder.createScreenCaptureFromBase64String(filename).build());
 
             }
         } catch (Exception e) {
