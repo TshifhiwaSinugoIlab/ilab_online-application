@@ -23,7 +23,6 @@ public class webFunctions extends webActions{
         try{
 
             clickObject(career.career_button, driver);
-            String filename = report.CaptureScreenShot(driver);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -35,7 +34,6 @@ public class webFunctions extends webActions{
 
         try{
             clickObject(loc.location_button, driver);
-            String filename = report.CaptureScreenShot(driver);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -48,7 +46,6 @@ public class webFunctions extends webActions{
         try{
 
             clickObject(hyper_link.hyperlink_button, driver);
-            String filename = report.CaptureScreenShot(driver);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -62,7 +59,6 @@ public class webFunctions extends webActions{
         try{
 
             clickObject(apply.applOnline_btn, driver);
-            String filename = report.CaptureScreenShot(driver);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -76,7 +72,7 @@ public class webFunctions extends webActions{
         try {
             passData(fill.name, driver, YourName);
             passData(fill.email, driver, Email);
-            passData(fill.contact, driver, RandomPhoneNumberGenerator.RandomGenerator(driver));
+            passData(fill.contact, driver, RandomPhoneNumberGenerator.RandomGenerator());
             passData(fill.why_iLAB, driver, WhyIlab);
 
             clickObject(fill.submit, driver);

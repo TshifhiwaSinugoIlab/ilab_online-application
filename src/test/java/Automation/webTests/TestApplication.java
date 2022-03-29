@@ -54,9 +54,7 @@ public class TestApplication {
                 functions.Location(webUtilities.getWebDriver());
                 functions.SelectFirstHyperLink(webUtilities.getWebDriver());
                 functions.ApplyOnline(webUtilities.getWebDriver());
-                functions.FillInFields(web.getWebDriver(), node, FromData.getString("Name"), FromData.getString("EmailAddress"), FromData.getString("WhyiLAB"));
-
-
+                functions.FillInFields(webUtilities.getWebDriver(), node, FromData.getString("Name"), FromData.getString("EmailAddress"), FromData.getString("WhyiLAB"));
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
