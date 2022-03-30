@@ -16,6 +16,6 @@ public class selectApply {
         PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, 10), this);
     }
 
-    @FindBy(xpath = "//*[@id=\"wpjb-scroll\"]/div[1]/a")
+    @FindBy(xpath = "//a[text()[contains(.,'Apply Online')]]")
     public WebElement applOnline_btn;
 }

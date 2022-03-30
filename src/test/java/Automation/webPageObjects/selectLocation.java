@@ -16,7 +16,7 @@ public class selectLocation {
         PageFactory.initElements(new AjaxElementLocatorFactory(this.driver, 10), this);
     }
 
-    @FindBy(xpath = "//a[text()[contains(.,'South Africa')]]")
+    @FindBy(xpath = "//a[text() ='South Africa']")
     public WebElement location_button;
 
 }
